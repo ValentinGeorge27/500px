@@ -1,9 +1,8 @@
 class PhotosController < ApplicationController
 
   def index
-    photos = F00px.get('photos?feature=popular&rpp=100')
-    respond_to do |format|
-      format.html { render action: 'index', locals: { photos: JSON.parse(photos.body) } }
-    end
+    photos = F00px.get('photos?feature=popular&rpp=25')
+    puts JSON.parse(photos.body)['photos']
+    respond_with JSON.parse(photos.body)['photos']
   end
 end

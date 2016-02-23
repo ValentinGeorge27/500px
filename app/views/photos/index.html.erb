@@ -1,3 +1,3 @@
-<div>
-  {{test}}
-</div>
+<% photos['photos'].each do |photo| %>
+    <%= image_tag photo['image_url'] %>
+<% end %>

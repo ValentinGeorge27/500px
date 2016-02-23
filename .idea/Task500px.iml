@@ -130,26 +130,26 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="angular-ui-bootstrap-rails (vbundled(0.14.3), /home/ggainat/RailsProjects/500px/vendor/bundle/gems/angular-ui-bootstrap-rails-0.14.3) [path][gem]">
+      <library name="mime-types (vbundled(2.99.1), /home/ggainat/RailsProjects/500px/vendor/bundle/gems/mime-types-2.99.1) [path][gem]">
         <CLASSES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/gems/angular-ui-bootstrap-rails-0.14.3/lib" />
-          <root url="file://$MODULE_DIR$/vendor/bundle/gems/angular-ui-bootstrap-rails-0.14.3/vendor" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/mime-types-2.99.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/mime-types-2.99.1/data" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/mime-types-2.99.1/support" />
         </CLASSES>
         <SOURCES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/gems/angular-ui-bootstrap-rails-0.14.3/lib" />
-          <root url="file://$MODULE_DIR$/vendor/bundle/gems/angular-ui-bootstrap-rails-0.14.3/vendor" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/mime-types-2.99.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/mime-types-2.99.1/data" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/mime-types-2.99.1/support" />
         </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="angularjs-rails (vbundled(1.5.0), /home/ggainat/RailsProjects/500px/vendor/bundle/gems/angularjs-rails-1.5.0) [path][gem]">
+      <library name="responders (vbundled(2.1.1), /home/ggainat/RailsProjects/500px/vendor/bundle/gems/responders-2.1.1) [path][gem]">
         <CLASSES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/gems/angularjs-rails-1.5.0/lib" />
-          <root url="file://$MODULE_DIR$/vendor/bundle/gems/angularjs-rails-1.5.0/vendor" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/responders-2.1.1/lib" />
         </CLASSES>
         <SOURCES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/gems/angularjs-rails-1.5.0/lib" />
-          <root url="file://$MODULE_DIR$/vendor/bundle/gems/angularjs-rails-1.5.0/vendor" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/responders-2.1.1/lib" />
         </SOURCES>
       </library>
     </orderEntry>
@@ -169,7 +169,6 @@
     <orderEntry type="library" scope="PROVIDED" name="i18n (v0.7.0, RVM: ruby-2.2.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="loofah (v2.0.3, RVM: ruby-2.2.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mail (v2.6.3, RVM: ruby-2.2.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="mime-types (v2.99, RVM: ruby-2.2.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mini_portile2 (v2.0.0, RVM: ruby-2.2.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.6.7.2, RVM: ruby-2.2.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack (v1.6.4, RVM: ruby-2.2.0) [gem]" level="application" />

@@ -3,13 +3,16 @@
 <head>
   <title>Task500px</title>
 
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
-<body ng-app="flapperNews" ng-controller="MainCtrl" >
-
-<%= yield %>
+<body ng-app="flapperNews">
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <ui-view></ui-view>
+  </div>
+</div>
 
 </body>
 </html>
