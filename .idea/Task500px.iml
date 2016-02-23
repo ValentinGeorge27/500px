@@ -117,6 +117,42 @@
     </content>
     <orderEntry type="jdk" jdkName="RVM: ruby-2.2.0" jdkType="RUBY_SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="angular-rails-templates (vbundled(1.0.0), /home/ggainat/RailsProjects/500px/vendor/bundle/gems/angular-rails-templates-1.0.0) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/angular-rails-templates-1.0.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/angular-rails-templates-1.0.0/vendor" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/angular-rails-templates-1.0.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/angular-rails-templates-1.0.0/vendor" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="angular-ui-bootstrap-rails (vbundled(0.14.3), /home/ggainat/RailsProjects/500px/vendor/bundle/gems/angular-ui-bootstrap-rails-0.14.3) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/angular-ui-bootstrap-rails-0.14.3/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/angular-ui-bootstrap-rails-0.14.3/vendor" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/angular-ui-bootstrap-rails-0.14.3/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/angular-ui-bootstrap-rails-0.14.3/vendor" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="angularjs-rails (vbundled(1.5.0), /home/ggainat/RailsProjects/500px/vendor/bundle/gems/angularjs-rails-1.5.0) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/angularjs-rails-1.5.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/angularjs-rails-1.5.0/vendor" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/angularjs-rails-1.5.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/angularjs-rails-1.5.0/vendor" />
+        </SOURCES>
+      </library>
+    </orderEntry>
     <orderEntry type="library" scope="PROVIDED" name="actionmailer (v4.2.0, RVM: ruby-2.2.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="actionpack (v4.2.0, RVM: ruby-2.2.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="actionview (v4.2.0, RVM: ruby-2.2.0) [gem]" level="application" />

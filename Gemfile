@@ -44,3 +44,8 @@ end
 
 gem 'mysql2', '~> 0.3.18'
 gem 'f00px'
+
+gem 'angularjs-rails'
+gem 'angular-ui-bootstrap-rails' #for bootstrap UI
+
+gem 'angular-rails-templates'
