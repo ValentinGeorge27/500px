@@ -11,6 +11,7 @@
 // about supported directives.
 //
 //= require angular
+//= require AngularDevise
 //= require angular-ui-router
 //= require angular-rails-templates
 //= require turbolinks

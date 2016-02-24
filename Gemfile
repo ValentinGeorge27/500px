@@ -52,3 +52,6 @@ gem 'angular-ui-bootstrap-rails' #for bootstrap UI
 =end
 
 gem 'angular-rails-templates'
+gem 'angular_rails_csrf'
+
+gem 'devise', '~> 3.4.0'
