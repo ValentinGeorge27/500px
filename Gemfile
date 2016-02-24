@@ -38,14 +38,29 @@ group :development, :test do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
 
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'capybara'
+  gem 'guard-rspec'
+  gem 'spring-commands-rspec'
+  gem 'vcr'
+  gem 'database_cleaner'
+
+  gem 'teaspoon-jasmine'
+  gem 'phantomjs'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+end
+
+group :test do
+  gem 'webmock'
 end
 
 gem 'mysql2', '~> 0.3.18'
 gem 'f00px'
 gem 'responders', '~> 2.0'
 
+gem 'bower-rails'
 =begin
 gem 'angularjs-rails'
 gem 'angular-ui-bootstrap-rails' #for bootstrap UI

@@ -1,10 +1,7 @@
 <div class="page-header">
-    <h3>
-        <a ng-show="photo.url" href="{{photo.url}}">
-            {{photo.name}}
-        </a>
-        <span ng-hide="photo.url">
-          {{photo.description}}
-        </span>
-    </h3>
+    <h1>Features Photos</h1>
+</div>
+
+<div ng-repeat="photo in photos" style="float:left">
+    <img ng-src="{{photo.image_url}}" alt="photo.description" >
 </div>

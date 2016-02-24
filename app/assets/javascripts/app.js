@@ -1,6 +1,7 @@
 angular.module('flapperNews', ['ui.router', 'templates', 'Devise'])
     .config(['$stateProvider', '$urlRouterProvider',
         function($stateProvider, $urlRouterProvider) {
+
             $stateProvider
                 .state('login', {
                     url: '/login',
@@ -25,19 +26,19 @@ angular.module('flapperNews', ['ui.router', 'templates', 'Devise'])
                 .state('home', {
                     url: '/home',
                     templateUrl: 'home/_home.html',
-                    controller: 'MainCtrl',
-                    resolve: {
-                        photoPromise: ['photos', function(photos){
-                            return photos.getAll();
-                        }]
-                    }
+                    controller: 'MainCtrl'
                 })
                 .state('photos', {
                     url: '/photos',
                     templateUrl: 'photos/_photos.html',
-                    controller: 'PhotosCtrl'
+                    controller: 'PhotosCtrl',
+                    resolve: {
+                        photoPromise: ['photos', function (photos) {
+                            return photos.getAll();
+                        }]
+                    }
                 });
 
-            $urlRouterProvider.otherwise('home');
+            $urlRouterProvider.otherwise('login');
         }]);
 
