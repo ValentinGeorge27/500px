@@ -1,4 +1,4 @@
-angular.module('flapperNews')
+angular.module('photosApp')
     .controller('AuthCtrl', ['$scope', '$state', 'Auth',
         function($scope, $state, Auth){
             $scope.login = function() {

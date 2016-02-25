@@ -1,4 +1,4 @@
-angular.module('flapperNews')
+angular.module('photosApp')
     .factory('photos', ['$http',function($http){
         var o = {
             photos: []

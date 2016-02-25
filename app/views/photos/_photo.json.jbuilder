@@ -1,0 +1,1 @@
+json.(photo, :id, :name, :image_url, :description)

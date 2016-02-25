@@ -1,4 +1,4 @@
-angular.module('flapperNews')
+angular.module('photosApp')
     .controller('NavCtrl', ['$scope', 'Auth',
         function($scope, Auth){
             $scope.signedIn = Auth.isAuthenticated;

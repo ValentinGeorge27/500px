@@ -186,6 +186,16 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
+      <library name="childprocess (vbundled(0.5.9), /home/ggainat/RailsProjects/500px/vendor/bundle/gems/childprocess-0.5.9) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/childprocess-0.5.9/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/childprocess-0.5.9/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
       <library name="coderay (vbundled(1.1.1), /home/ggainat/RailsProjects/500px/vendor/bundle/gems/coderay-1.1.1) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/coderay-1.1.1/bin" />
@@ -194,18 +204,6 @@
         <SOURCES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/coderay-1.1.1/bin" />
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/coderay-1.1.1/lib" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="crack (vbundled(0.4.3), /home/ggainat/RailsProjects/500px/vendor/bundle/gems/crack-0.4.3) [path][gem]">
-        <CLASSES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/gems/crack-0.4.3/lib" />
-          <root url="file://$MODULE_DIR$/vendor/bundle/gems/crack-0.4.3/script" />
-        </CLASSES>
-        <SOURCES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/gems/crack-0.4.3/lib" />
-          <root url="file://$MODULE_DIR$/vendor/bundle/gems/crack-0.4.3/script" />
         </SOURCES>
       </library>
     </orderEntry>
@@ -346,16 +344,6 @@
         <SOURCES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/guard-rspec-4.6.4/lib" />
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/guard-rspec-4.6.4/gemfiles" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="hashdiff (vbundled(0.3.0), /home/ggainat/RailsProjects/500px/vendor/bundle/gems/hashdiff-0.3.0) [path][gem]">
-        <CLASSES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/gems/hashdiff-0.3.0/lib" />
-        </CLASSES>
-        <SOURCES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/gems/hashdiff-0.3.0/lib" />
         </SOURCES>
       </library>
     </orderEntry>
@@ -558,14 +546,24 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="safe_yaml (vbundled(1.0.4), /home/ggainat/RailsProjects/500px/vendor/bundle/gems/safe_yaml-1.0.4) [path][gem]">
+      <library name="rubyzip (vbundled(1.2.0), /home/ggainat/RailsProjects/500px/vendor/bundle/gems/rubyzip-1.2.0) [path][gem]">
         <CLASSES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/gems/safe_yaml-1.0.4/bin" />
-          <root url="file://$MODULE_DIR$/vendor/bundle/gems/safe_yaml-1.0.4/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/rubyzip-1.2.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/rubyzip-1.2.0/samples" />
         </CLASSES>
         <SOURCES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/gems/safe_yaml-1.0.4/bin" />
-          <root url="file://$MODULE_DIR$/vendor/bundle/gems/safe_yaml-1.0.4/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/rubyzip-1.2.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/rubyzip-1.2.0/samples" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="selenium-webdriver (vbundled(2.52.0), /home/ggainat/RailsProjects/500px/vendor/bundle/gems/selenium-webdriver-2.52.0) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/selenium-webdriver-2.52.0/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/selenium-webdriver-2.52.0/lib" />
         </SOURCES>
       </library>
     </orderEntry>
@@ -596,6 +594,16 @@
         </CLASSES>
         <SOURCES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/spring-commands-rspec-1.0.4/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="sprockets-rails (vbundled(2.3.3), /home/ggainat/RailsProjects/500px/vendor/bundle/gems/sprockets-rails-2.3.3) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/sprockets-rails-2.3.3/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/sprockets-rails-2.3.3/lib" />
         </SOURCES>
       </library>
     </orderEntry>
@@ -646,16 +654,12 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="webmock (vbundled(1.24.1), /home/ggainat/RailsProjects/500px/vendor/bundle/gems/webmock-1.24.1) [path][gem]">
+      <library name="websocket (vbundled(1.2.2), /home/ggainat/RailsProjects/500px/vendor/bundle/gems/websocket-1.2.2) [path][gem]">
         <CLASSES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/gems/webmock-1.24.1/lib" />
-          <root url="file://$MODULE_DIR$/vendor/bundle/gems/webmock-1.24.1/gemfiles" />
-          <root url="file://$MODULE_DIR$/vendor/bundle/gems/webmock-1.24.1/minitest" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/websocket-1.2.2/lib" />
         </CLASSES>
         <SOURCES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/gems/webmock-1.24.1/lib" />
-          <root url="file://$MODULE_DIR$/vendor/bundle/gems/webmock-1.24.1/gemfiles" />
-          <root url="file://$MODULE_DIR$/vendor/bundle/gems/webmock-1.24.1/minitest" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/websocket-1.2.2/lib" />
         </SOURCES>
       </library>
     </orderEntry>
@@ -696,7 +700,6 @@
     <orderEntry type="library" scope="PROVIDED" name="railties (v4.2.0, RVM: ruby-2.2.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rake (v10.5.0, RVM: ruby-2.2.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets (v3.5.2, RVM: ruby-2.2.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="sprockets-rails (v3.0.1, RVM: ruby-2.2.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thor (v0.19.1, RVM: ruby-2.2.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thread_safe (v0.3.5, RVM: ruby-2.2.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tzinfo (v1.2.2, RVM: ruby-2.2.0) [gem]" level="application" />

@@ -4,12 +4,8 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root to: 'application#angular'
+  root to: 'home#index'
 
-  resources :photos, only: [:index] do
-    member do
-      put '/upvote' => 'photos#upvote'
-    end
-  end
+  resources :photos, only: [:index]
 
 end

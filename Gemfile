@@ -45,6 +45,7 @@ group :development, :test do
   gem 'spring-commands-rspec'
   gem 'vcr'
   gem 'database_cleaner'
+  gem 'selenium-webdriver'
 
   gem 'teaspoon-jasmine'
   gem 'phantomjs'
@@ -52,9 +53,6 @@ group :development, :test do
   gem 'spring'
 end
 
-group :test do
-  gem 'webmock'
-end
 
 gem 'mysql2', '~> 0.3.18'
 gem 'f00px'
@@ -70,3 +68,5 @@ gem 'angular-rails-templates'
 gem 'angular_rails_csrf'
 
 gem 'devise', '~> 3.4.0'
+
+gem 'sprockets-rails', '2.3.3'
