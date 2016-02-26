@@ -1,5 +1,5 @@
 describe("navCtrl", function() {
-    beforeEach(module("photos"));
+    beforeEach(module("photosApp"));
 
     var $controller;
 

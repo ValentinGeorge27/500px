@@ -1,14 +1,14 @@
 angular.module('photosApp')
     .factory('photos', ['$http',function($http){
-        var o = {
+        var photos = {
             photos: []
         };
 
-        o.getAll = function(){
+        photos.getAll = function(){
             return $http.get('/photos.json').success(function(data){
                angular.copy(data, o.photos)
             });
         };
 
-        return o;
+        return photos;
     }]);
