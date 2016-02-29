@@ -1,0 +1,24 @@
+{
+  "name": "500px",
+  "homepage": "https://github.com/ValentinGeorge27/500px",
+  "authors": [
+    "ValentinGeorge27 <george.valentin27@gmail.com>"
+  ],
+  "description": "AngularJs tutorial",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.0",
+    "angular-ui-router": "^0.2.18",
+    "bootstrap": "^3.3.6",
+    "AngularDevise": "angular-devise#^1.2.0"
+  }
+}
