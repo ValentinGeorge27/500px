@@ -2,7 +2,7 @@ photosModule = angular.module('photosApp', [
               'ui.router', 'templates', 'Devise'])
 
 photosModule.config(['$stateProvider', '$urlRouterProvider',
-          ($stateProvider, $urlRouterProvider, $resource)->
+          ($stateProvider, $urlRouterProvider)->
             $stateProvider
                 .state('/',
                   templateUrl: "index.html"
@@ -16,6 +16,13 @@ photosModule.config(['$stateProvider', '$urlRouterProvider',
                         Auth.currentUser().then( () ->
                             $state.go('home');
                         )
+                    ]
+                })
+                .state('logout', {
+                    onEnter: ['$state', 'Auth', ($state, Auth) ->
+                      Auth.isAuthenticated().catch( () ->
+                          $state.go('login');
+                      )
                     ]
                 })
                 .state('register', {

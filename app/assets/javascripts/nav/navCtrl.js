@@ -17,6 +17,7 @@ angular.module('photosApp')
             });
 
             $scope.$on('devise:logout', function (e, user){
+                alert(user.username + ' you are signed out!');
                 $scope.user = {};
             });
         }]);

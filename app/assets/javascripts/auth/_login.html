@@ -1,16 +1,31 @@
-<div class="page-header">
-    <h1>Log In</h1>
-</div>
+<div class="col-md-6 col-md-offset-3">
+    <div class="page-header" >
+        <h1>Log In</h1>
+    </div>
 
 <form ng-submit="login()">
-    <div class="input-group">
-        <input type="email" class="form-control" placeholder="Email" ng-model="user.email" required>
+
+    <div class="form-group" ng-class="{error: errors.errors.email}">
+        <label>Email:</label>
+        <input type="email" ng-model="user.email" />
+        <div ng-show="errors.errors.email">
+            <div ng-repeat="field_error in errors.errors.email">{{field_error}}</div>
+        </div>
     </div>
-    <div class="input-group">
-        <input type="password" class="form-control" placeholder="Password" ng-model="user.password" required>
+
+    <div class="form-group" ng-class="{error: errors.errors.password}">
+        <label>Password:</label>
+        <input type="password" ng-model="user.password" />
+        <div ng-show="errors.errors.password">
+            <div ng-repeat="field_error in errors.errors.password">{{field_error}}</div>
+        </div>
     </div>
-    <div role="alert" ng-show="login_error">
-        <div ng-repeat="field_error in login_error">{{field_error}}</div>
-    </div>
+
     <input type="submit" class="btn btn-default" value="Log In">
 </form>
+
+    <div ng-show="errors.message" class="error">
+        <p>{{errors.message}}</p>
+    </div>
+
+</div>

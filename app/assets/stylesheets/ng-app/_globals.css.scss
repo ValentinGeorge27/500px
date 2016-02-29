@@ -1,0 +1,9 @@
+.view-container{
+  // Animations for the separate UI Views
+  &.ng-enter,
+  &.ng-leave{
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+}
