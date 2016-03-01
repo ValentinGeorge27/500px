@@ -11,7 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160225101158) do
+ActiveRecord::Schema.define(version: 20160301132545) do
+
+  create_table "identities", force: :cascade do |t|
+    t.string   "provider",     limit: 255, null: false
+    t.string   "access_token", limit: 255
+    t.date     "expire_at"
+    t.integer  "user_id",      limit: 4,   null: false
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+  end
 
   create_table "photos", force: :cascade do |t|
     t.datetime "created_at", null: false
