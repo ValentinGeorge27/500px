@@ -23,7 +23,7 @@ angular.module('photosApp')
                         $scope.errors.message = data.error;
                     } else {
                         // note that JSON.stringify is not supported in some older browsers, we're ignoring that
-                        $scope.errors.message = "Unexplained error, potentially a server error, please report via support channels as this indicates a code defect.  Server response was: " + JSON.stringify(data);
+                        $scope.errors.message = JSON.stringify(data.error);
                     }
                 }
             }
