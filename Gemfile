@@ -76,3 +76,4 @@ gem 'bootstrap-sass'
 #facebook graph
 gem 'fb_graph2'
 gem 'figaro'
+gem 'jwt'

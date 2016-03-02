@@ -424,6 +424,16 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
+      <library name="jwt (vbundled(1.5.3), /home/ggainat/RailsProjects/500px/vendor/bundle/gems/jwt-1.5.3) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/jwt-1.5.3/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/jwt-1.5.3/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
       <library name="listen (vbundled(3.0.6), /home/ggainat/RailsProjects/500px/vendor/bundle/gems/listen-3.0.6) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/listen-3.0.6/bin" />

@@ -91,4 +91,3 @@ photosModule.config(['$stateProvider', '$urlRouterProvider',
                 }(document));
 
             }]);
-
