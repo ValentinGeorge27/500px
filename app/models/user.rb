@@ -6,8 +6,10 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
+  has_secure_password
+
   def generate_auth_token
-    payload = { user_id: self.id }
+    payload = { user_id: self.id, exp: 24.hours.from_now.to_i }
     AuthToken.encode(payload)
   end
 

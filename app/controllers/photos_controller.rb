@@ -1,5 +1,4 @@
 class PhotosController < ApplicationController
-  before_filter :authenticate_user!, only: [:index]
 
   def index
     photos = F00px.get('photos?feature=popular&rpp=25')

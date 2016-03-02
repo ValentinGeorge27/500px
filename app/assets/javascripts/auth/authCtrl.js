@@ -11,14 +11,14 @@ angular.module('photosApp')
                     errorService.failure( data, status, $scope);
                 });
             };
-/*
+
             $scope.register = function() {
-                Auth.register($scope.user).then(function(){
+                AuthService.register($scope.user).then(function(){
                     $state.go('photos');
                 }, function(data, status) {
                     errorService.failure( data, status, $scope);
                 });
-            };*/
+            };
 
             $scope.reset_users = function() {
                 $scope.user = { email: null, username: null, password: null };

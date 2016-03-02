@@ -24,7 +24,7 @@ class ApplicationController < ActionController::Base
   # Based on the user_id inside the token payload, find the user.
   def set_current_user
     if decoded_auth_token
-      @current_user ||= User.find(decoded_auth_token[:user_id])
+      @current_user ||= User.find_by_id(decoded_auth_token['user_id'])
     end
   end
 
@@ -42,7 +42,7 @@ class ApplicationController < ActionController::Base
   end
 
   def auth_token_expired?
-    decoded_auth_token && decoded_auth_token.expired?
+    decoded_auth_token && AuthToken.expired?(decoded_auth_token)
   end
 
   # JWT's are stored in the Authorization header using this format:

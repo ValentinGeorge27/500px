@@ -8,6 +8,7 @@ Rails.application.routes.draw do
 
   post '/facebook/fetch', to: 'facebook#fetch'
   post 'auth', to: 'auth#authenticate'
+  post 'register', to: 'auth#register'
 
   resources :photos, only: [:index]
 
