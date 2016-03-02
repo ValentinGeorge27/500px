@@ -23,12 +23,4 @@ angular.module('photosApp')
             $scope.reset_users = function() {
                 $scope.user = { email: null, username: null, password: null };
             };
-
-            /*$scope.logout = function() {
-                Auth.logout($scope.user).then(function(){
-                    $state.go('login');
-                }, function(data, status) {
-                    errorService.failure( data, status, $scope);
-                });
-            };*/
         }]);

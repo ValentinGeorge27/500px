@@ -12,10 +12,16 @@ class FacebookController < ApplicationController
       @error = the_error.message
       puts "Error #{the_error.message}"
     end
-
+    user = nil
     if fb_user && fb_user.email
       user = User.from_oauth2(fb_user, provider)
     end
-    sign_in_and_redirect user, event: :authentication
+
+    if user
+      render json: { user: user, auth_token: user.generate_auth_token }
+    else
+      render json: { error: 'Invalid username or password' }, status: :unauthorized
+    end
+
   end
 end

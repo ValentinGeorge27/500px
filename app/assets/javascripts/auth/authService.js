@@ -10,7 +10,7 @@ angular.module('photosApp')
                     email: email,
                     password: password
                 }).success(function(resp) {
-                    authToken.set(resp.auth_token);
+                    authToken.set(resp.auth_token, resp.user);
                     $rootScope.$broadcast(AuthEvents.loginSuccess);
                     d.resolve(resp.user);
                 }).error(function(resp) {
@@ -30,7 +30,7 @@ angular.module('photosApp')
                     username: username,
                     password: password
                 }).success(function(resp) {
-                    authToken.set(resp.auth_token);
+                    authToken.set(resp.auth_token, resp.user);
                     $rootScope.$broadcast(AuthEvents.loginSuccess);
                     d.resolve(resp.user);
                 }).error(function(resp) {
