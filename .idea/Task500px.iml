@@ -154,6 +154,16 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
+      <library name="attr_required (vbundled(1.0.1), /home/ggainat/RailsProjects/500px/vendor/bundle/gems/attr_required-1.0.1) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/attr_required-1.0.1/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/attr_required-1.0.1/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
       <library name="autoprefixer-rails (vbundled(6.3.3.1), /home/ggainat/RailsProjects/500px/vendor/bundle/gems/autoprefixer-rails-6.3.3.1) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/autoprefixer-rails-6.3.3.1/lib" />
@@ -310,6 +320,16 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
+      <library name="fb_graph2 (vbundled(0.7.7), /home/ggainat/RailsProjects/500px/vendor/bundle/gems/fb_graph2-0.7.7) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/fb_graph2-0.7.7/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/fb_graph2-0.7.7/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
       <library name="ffi (vbundled(1.9.10), /home/ggainat/RailsProjects/500px/vendor/bundle/gems/ffi-1.9.10) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/ffi-1.9.10/ext" />
@@ -322,6 +342,20 @@
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/ffi-1.9.10/gen" />
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/ffi-1.9.10/lib" />
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/ffi-1.9.10/libtest" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="figaro (vbundled(1.1.1), /home/ggainat/RailsProjects/500px/vendor/bundle/gems/figaro-1.1.1) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/figaro-1.1.1/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/figaro-1.1.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/figaro-1.1.1/gemfiles" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/figaro-1.1.1/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/figaro-1.1.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/figaro-1.1.1/gemfiles" />
         </SOURCES>
       </library>
     </orderEntry>
@@ -372,6 +406,30 @@
         <SOURCES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/guard-rspec-4.6.4/lib" />
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/guard-rspec-4.6.4/gemfiles" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="httpclient (vbundled(2.7.1), /home/ggainat/RailsProjects/500px/vendor/bundle/gems/httpclient-2.7.1) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/httpclient-2.7.1/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/httpclient-2.7.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/httpclient-2.7.1/sample" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/httpclient-2.7.1/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/httpclient-2.7.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/httpclient-2.7.1/sample" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jwt (vbundled(1.5.3), /home/ggainat/RailsProjects/500px/vendor/bundle/gems/jwt-1.5.3) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/jwt-1.5.3/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/jwt-1.5.3/lib" />
         </SOURCES>
       </library>
     </orderEntry>
@@ -474,6 +532,16 @@
         <SOURCES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/pry-0.10.3/bin" />
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/pry-0.10.3/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="rack-oauth2 (vbundled(1.3.0), /home/ggainat/RailsProjects/500px/vendor/bundle/gems/rack-oauth2-1.3.0) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/rack-oauth2-1.3.0/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/rack-oauth2-1.3.0/lib" />
         </SOURCES>
       </library>
     </orderEntry>
@@ -656,6 +724,16 @@
         </CLASSES>
         <SOURCES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/teaspoon-jasmine-2.3.4/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="url_safe_base64 (vbundled(0.2.2), /home/ggainat/RailsProjects/500px/vendor/bundle/gems/url_safe_base64-0.2.2) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/url_safe_base64-0.2.2/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/url_safe_base64-0.2.2/lib" />
         </SOURCES>
       </library>
     </orderEntry>

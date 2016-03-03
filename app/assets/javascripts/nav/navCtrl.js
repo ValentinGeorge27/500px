@@ -1,23 +1,12 @@
 angular.module('photosApp')
-    .controller('NavCtrl', ['$scope', 'Auth',
-        function($scope, Auth){
-            $scope.signedIn = Auth.isAuthenticated;
-            $scope.logout = Auth.logout;
+    .controller('NavCtrl', ['$scope','$state', 'AuthService', 'CurrentUser', 'errorService',
+        function($scope, $state, AuthService, currentUser, errorService){
+            $scope.signedIn = AuthService.isAuthenticated;
+            $scope.user = currentUser;
 
-            Auth.currentUser().then(function (user){
-                $scope.user = user;
-            });
+            $scope.logout = function() {
+                AuthService.logout();
+                    $state.go('login');
+            };
 
-            $scope.$on('devise:new-registration', function (e, user){
-                $scope.user = user;
-            });
-
-            $scope.$on('devise:login', function (e, user){
-                $scope.user = user;
-            });
-
-            $scope.$on('devise:logout', function (e, user){
-                alert(user.username + ' you are signed out!');
-                $scope.user = {};
-            });
         }]);
