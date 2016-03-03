@@ -1,22 +1,22 @@
 <div class="loginpanel">
-<form ng-submit="login()">
-    <div class="txt" ng-class="{error: errors.errors.email}">
-        <input type="email" placeholder="Email" ng-model="user.email" />
-        <div ng-show="errors.errors.email">
-            <div ng-repeat="field_error in errors.errors.email">{{field_error}}</div>
+    <form novalidate name="loginForm"  ng-submit="login()">
+        <div class="txt" ng-class="{true: 'error'}[submitted && loginForm.email.$invalid]">
+            <input type="email" name="email" placeholder="Email" ng-model="user.email" required/>
+            <span class="help-inline" ng-show="submitted && loginForm.email.$error.required">Required</span>
+            <span class="help-inline" ng-show="submitted && loginForm.email.$error.email">Invalid email</span>
+            <br />
         </div>
-    </div>
 
-    <div class="txt" ng-class="{error: errors.errors.password}">
-        <input type="password" placeholder="Password" ng-model="user.password" />
-        <div ng-show="errors.errors.password">
-            <div ng-repeat="field_error in errors.errors.password">{{field_error}}</div>
+        <div class="txt" ng-class="{error: errors.errors.password}">
+            <input type="password" ng-required="true" ng-minlength="8" placeholder="Password" ng-model="user.password" />
+            <div ng-show="errors.errors.password">
+                <div ng-repeat="field_error in errors.errors.password">{{field_error}}</div>
+            </div>
         </div>
-    </div>
-    <div class="buttons">
-        <input type="submit" class="btn btn-default centered" value="Log In">
-    </div>
-</form>
+        <div class="buttons">
+            <input type="submit" ng-disabled="!loginForm.$valid" class="btn btn-default centered" value="Log In">
+        </div>
+    </form>
 
     <div class="hr">
         <div></div>
@@ -29,6 +29,7 @@
             <div id="fb-root"></div>
             <div class="social">
                 <a href="javascript:void(0)" data-ng-click='fetch()' class='facebook'></a>
+                <a href="javascript:void(0)" class='500px'></a>
             </div>
         </div>
 </div>

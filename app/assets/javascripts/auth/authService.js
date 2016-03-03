@@ -20,7 +20,6 @@ angular.module('photosApp')
                 return d.promise;
             },
             logout: function(){
-                console.log('logout');
                 authToken.unset('auth_token');
                 authToken.unset('user');
             },

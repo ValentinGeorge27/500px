@@ -13,7 +13,6 @@ angular.module('photosApp')
 
         authToken.unset = function(key){
             localStorage.removeItem(key);
-            console.log(localStorage.getItem(key));
         };
 
         return authToken;
