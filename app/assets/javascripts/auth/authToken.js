@@ -1,24 +1,19 @@
 angular.module('photosApp')
     .factory('AuthToken', function(){
         var authToken = {};
-        var token = 'none';
-        var user= {};
 
         authToken.set = function( newToken, newUser ) {
-            token = newToken;
-            user = newUser;
+            localStorage.setItem('auth_token', newToken );
+            localStorage.setItem('user', JSON.stringify(newUser));
         };
 
-        authToken.get = function(){
-          return token;
+        authToken.get = function(key){
+          return localStorage.getItem(key);
         };
 
-        authToken.getUser = function(){
-            return user;
-        };
-
-        authToken.unset = function(){
-            token = 'none';
+        authToken.unset = function(key){
+            localStorage.removeItem(key);
+            console.log(localStorage.getItem(key));
         };
 
         return authToken;

@@ -10,7 +10,9 @@ class User < ActiveRecord::Base
 
   def generate_auth_token
     payload = { user_id: self.id, exp: 24.hours.from_now.to_i }
-    AuthToken.encode(payload)
+    auth_token_gen = AuthToken.encode(payload)
+    self.update_attribute('tokens', auth_token_gen)
+    auth_token_gen
   end
 
   def self.from_oauth2(oauth_user, provider)

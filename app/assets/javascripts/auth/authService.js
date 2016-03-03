@@ -2,7 +2,7 @@ angular.module('photosApp')
     .service("AuthService", ['$http','$q', '$rootScope', 'AuthToken', 'AuthEvents', function($http, $q, $rootScope, authToken, AuthEvents) {
         return {
             isAuthenticated: function(){
-                return authToken.getUser();
+                return authToken.get('user');
             },
             login: function(email, password) {
                 var d = $q.defer();
@@ -20,7 +20,9 @@ angular.module('photosApp')
                 return d.promise;
             },
             logout: function(){
-                authToken.unset();
+                console.log('logout');
+                authToken.unset('auth_token');
+                authToken.unset('user');
             },
             register: function(email,username,password){
                 authToken.unset();

@@ -1,12 +1,12 @@
 angular.module('photosApp')
-    .controller('NavCtrl', ['$scope', 'AuthService', 'CurrentUser',
-        function($scope, AuthService, CurrentUser){
+    .controller('NavCtrl', ['$scope','$state', 'AuthService', 'CurrentUser', 'errorService',
+        function($scope, $state, AuthService, currentUser, errorService){
             $scope.signedIn = AuthService.isAuthenticated;
-            $scope.user = CurrentUser.user;
+            $scope.user = currentUser;
 
-            $scope.logout = function(){
+            $scope.logout = function() {
                 AuthService.logout();
-                $scope.user = {}
-            }
+                    $state.go('login');
+            };
 
         }]);

@@ -4,7 +4,7 @@ angular.module('photosApp')
             // This will be called on every outgoing http request
             request: function(config) {
                 var AuthToken = $injector.get("AuthToken");
-                var token = AuthToken.get();
+                var token = AuthToken.get('auth_token');
                 config.headers = config.headers || {};
                 if (token) {
                     config.headers.Authorization = "Bearer " + token;

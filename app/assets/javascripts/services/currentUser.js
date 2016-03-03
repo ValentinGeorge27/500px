@@ -1,11 +1,10 @@
 angular.module('photosApp')
     .factory('CurrentUser',['AuthToken', function(AuthToken){
-        return {
-            user: function(){
-                if(AuthToken.get())
-                    return AuthToken.getUser();
-                else
-                    return {}
-            }
+        var user = {};
+        if(AuthToken.get('auth_token'))
+        {
+            user = angular.fromJson(AuthToken.get('user'));
         }
+
+        return user;
     }]);
