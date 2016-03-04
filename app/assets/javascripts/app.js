@@ -22,6 +22,10 @@ photosModule.config(['$stateProvider', '$urlRouterProvider',
             templateUrl: 'home/_home.html',
             controller: 'MainCtrl'
         })
+        .state('callback',{
+            url:'/callback',
+            templateUrl: '500px_sdk/callback.html'
+        })
         .state('photos', {
                 url: '/photos',
                 templateUrl: 'photos/_photos.html',
@@ -33,7 +37,6 @@ photosModule.config(['$stateProvider', '$urlRouterProvider',
                 }
         });
 
-        $urlRouterProvider.otherwise('login');
     }])
         .run(['$rootScope', '$window',
             function($rootScope, $window) {
@@ -61,6 +64,9 @@ photosModule.config(['$stateProvider', '$urlRouterProvider',
                         $rootScope.$apply();
                     });
 
+                    _500px.init({
+                        sdk_key: 'f287d6fc8637cd63f966e6570c537963e2fc9abe'
+                    });
                 };
 
                 (function (d) {

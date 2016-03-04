@@ -235,9 +235,15 @@ div.loginpanel div.social a:active:before {
   -o-transition: all 0s;
   transition: all 0s;
 }
+
 div.loginpanel div.social a.facebook:before {
   content: "\f30c";
 }
+
+div.loginpanel div.social a.photos500:before {
+  content: image_url("500px_vector_logo.svg_.png");
+}
+
 div.loginpanel div.social a.facebook:hover:before,
 div.loginpanel div.social a.facebook:focus:before {
   text-shadow: 0 1px #1e2e4f;

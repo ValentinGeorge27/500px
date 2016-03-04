@@ -2,16 +2,15 @@
     <form novalidate name="loginForm"  ng-submit="login()">
         <div class="txt" ng-class="{true: 'error'}[submitted && loginForm.email.$invalid]">
             <input type="email" name="email" placeholder="Email" ng-model="user.email" required/>
-            <span class="help-inline" ng-show="submitted && loginForm.email.$error.required">Required</span>
-            <span class="help-inline" ng-show="submitted && loginForm.email.$error.email">Invalid email</span>
+            <span class="help-inline" ng-show="loginForm.email.$error.required">Required</span>
+            <span class="help-inline" ng-show="loginForm.email.$error.email">Invalid email</span>
             <br />
         </div>
 
         <div class="txt" ng-class="{error: errors.errors.password}">
-            <input type="password" ng-required="true" ng-minlength="8" placeholder="Password" ng-model="user.password" />
-            <div ng-show="errors.errors.password">
-                <div ng-repeat="field_error in errors.errors.password">{{field_error}}</div>
-            </div>
+            <input type="password" name="password" ng-required="true" ng-minlength="8" placeholder="Password" ng-model="user.password" />
+            <span class="help-inline" ng-show="loginForm.password.$error.minlength">Password too short</span>
+            <span class="help-inline" ng-show="loginForm.password.$error.required">Required</span>
         </div>
         <div class="buttons">
             <input type="submit" ng-disabled="!loginForm.$valid" class="btn btn-default centered" value="Log In">
@@ -24,14 +23,11 @@
         <div></div>
     </div>
 
-
+    <div class="social">
         <div data-facebook='<%= Figaro.env.facebook_key %>'>
             <div id="fb-root"></div>
-            <div class="social">
                 <a href="javascript:void(0)" data-ng-click='fetch()' class='facebook'></a>
-                <a href="javascript:void(0)" class='500px'></a>
             </div>
-        </div>
+        <a href="javascript:void(0)" ng-disabled ng-click='login500px()' class='photos500'></a>
+    </div>
 </div>
-
-<span class="resp-info"></span>

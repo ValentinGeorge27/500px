@@ -20,7 +20,7 @@ class FacebookController < ApplicationController
     if user
       render json: { user: user, auth_token: user.generate_auth_token }
     else
-      render json: { error: 'Invalid username or password' }, status: :unauthorized
+      render json: { error: 'Invalid credentials' }, status: :unauthorized
     end
 
   end
