@@ -1,31 +1,36 @@
-<div class="col-md-6 col-md-offset-3">
-    <div class="page-header" >
-        <h1>Log In</h1>
-    </div>
-
+<div class="loginpanel">
 <form ng-submit="login()">
-
-    <div class="form-group" ng-class="{error: errors.errors.email}">
-        <label>Email:</label>
-        <input type="email" ng-model="user.email" />
+    <div class="txt" ng-class="{error: errors.errors.email}">
+        <input type="email" placeholder="Email" ng-model="user.email" />
         <div ng-show="errors.errors.email">
             <div ng-repeat="field_error in errors.errors.email">{{field_error}}</div>
         </div>
     </div>
 
-    <div class="form-group" ng-class="{error: errors.errors.password}">
-        <label>Password:</label>
-        <input type="password" ng-model="user.password" />
+    <div class="txt" ng-class="{error: errors.errors.password}">
+        <input type="password" placeholder="Password" ng-model="user.password" />
         <div ng-show="errors.errors.password">
             <div ng-repeat="field_error in errors.errors.password">{{field_error}}</div>
         </div>
     </div>
-
-    <input type="submit" class="btn btn-default" value="Log In">
+    <div class="buttons">
+        <input type="submit" class="btn btn-default centered" value="Log In">
+    </div>
 </form>
 
-    <div ng-show="errors.message" class="error">
-        <p>{{errors.message}}</p>
+    <div class="hr">
+        <div></div>
+        <div>OR</div>
+        <div></div>
     </div>
 
+
+        <div data-facebook='<%= Figaro.env.facebook_key %>'>
+            <div id="fb-root"></div>
+            <div class="social">
+                <a href="javascript:void(0)" data-ng-click='fetch()' class='facebook'></a>
+            </div>
+        </div>
 </div>
+
+<span class="resp-info"></span>
