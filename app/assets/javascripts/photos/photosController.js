@@ -1,5 +1,5 @@
 angular.module('photosApp')
-    .controller('PhotosCtrl', ['$scope', '$stateParams', 'photos',
+    .controller('PhotosController', ['$scope', '$stateParams', 'photos',
         function($scope, $stateParams, photos, currentUser){
             $scope.photos = photos.photos;
         }]);

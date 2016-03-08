@@ -1,5 +1,5 @@
 angular.module('photosApp')
-    .controller('MainCtrl', ['$scope',
+    .controller('MainController', ['$scope',
         function($scope){
 
         }]);

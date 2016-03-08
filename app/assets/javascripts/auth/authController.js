@@ -1,5 +1,5 @@
 angular.module('photosApp')
-    .controller('AuthCtrl', ['$scope', '$state', 'AuthService', 'errorService',
+    .controller('AuthController', ['$scope', '$state', 'AuthService', 'errorService',
         function($scope, $state, AuthService, errorService){
 
             $scope.errors = {message: null, errors: {}};

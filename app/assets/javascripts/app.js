@@ -10,22 +10,22 @@ photosModule.config(['$stateProvider', '$urlRouterProvider',
         .state('login', {
             url: '/login',
             templateUrl: 'auth/_login.html',
-            controller: 'AuthCtrl'
+            controller: 'AuthController'
         })
         .state('register', {
             url: '/register',
             templateUrl: 'auth/_register.html',
-            controller: 'AuthCtrl'
+            controller: 'AuthController'
         })
         .state('home', {
             url: '/home',
             templateUrl: 'home/_home.html',
-            controller: 'MainCtrl'
+            controller: 'MainController'
         })
         .state('photos', {
                 url: '/photos',
                 templateUrl: 'photos/_photos.html',
-                controller: 'PhotosCtrl',
+                controller: 'PhotosController',
                 resolve: {
                     photoPromise: ['photos', function(photos) {
                         return photos.getAll();
